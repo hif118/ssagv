@@ -7,6 +7,7 @@ external-controller: 127.0.0.1:9090
 proxies:
   - {name: US01, server: 149.28.92.159, port: 61609, type: vmess, uuid: e3792e7c-6767-4403-9ebb-c46ff381925e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, tfo: false}
   - {name: US02, server: 149.28.78.17, port: 36061, type: vmess, uuid: b6258825-f831-43db-8d8a-728d7c2c38e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, tfo: false}
+  - {name: JP01, server: 64.176.57.170, port: 42142, type: vmess, uuid: d9e11325-1f5a-4f76-b4bf-7caa058c175f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, tfo: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -15,6 +16,7 @@ proxy-groups:
       - DIRECT
       - US01
       - US02
+      - JP01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -23,6 +25,7 @@ proxy-groups:
     proxies:
       - US01
       - US02
+      - JP01
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -31,6 +34,7 @@ proxy-groups:
       - 🎯 全球直连
       - US01
       - US02
+      - JP01
   - name: 📲 电报信息
     type: select
     proxies:
@@ -38,6 +42,7 @@ proxy-groups:
       - 🎯 全球直连
       - US01
       - US02
+      - JP01
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -45,6 +50,7 @@ proxy-groups:
       - 🚀 节点选择
       - US01
       - US02
+      - JP01
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -52,6 +58,7 @@ proxy-groups:
       - 🎯 全球直连
       - US01
       - US02
+      - JP01
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -60,6 +67,7 @@ proxy-groups:
       - ♻️ 自动选择
       - US01
       - US02
+      - JP01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,6 +92,7 @@ proxy-groups:
       - ♻️ 自动选择
       - US01
       - US02
+      - JP01
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
