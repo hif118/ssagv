@@ -6,7 +6,7 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: US01, server: 149.28.92.159, port: 61609, type: vmess, uuid: e3792e7c-6767-4403-9ebb-c46ff381925e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, tfo: false}
-  - {name: US02, server: 149.28.78.17, port: 36061, type: vmess, uuid: b6258825-f831-43db-8d8a-728d7c2c38e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, tfo: false}
+  - {name: US02, server: 45.76.244.194, port: 64039, type: vmess, uuid: adcae85b-388b-453f-ad23-0eabda9ce34a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, tfo: false}
   - {name: JP01, server: 64.176.57.170, port: 42142, type: vmess, uuid: d9e11325-1f5a-4f76-b4bf-7caa058c175f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, tfo: false}
 proxy-groups:
   - name: 🚀 节点选择
