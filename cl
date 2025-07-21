@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: US01, server: 66.42.189.44, port: 443, type: ss, cipher: aes-256-gcm, password: capsulcn.com, plugin: obfs, plugin-opts: {mode: http, host: ""}}
+  - {name: US01, server: 66.42.109.48, port: 443, type: ss, cipher: aes-256-gcm, password: capsulcn.com, plugin: obfs, plugin-opts: {mode: http, host: ""}}
   - {name: US02, server: 45.76.244.194, port: 64039, type: vmess, uuid: adcae85b-388b-453f-ad23-0eabda9ce34a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, tfo: false}
   - {name: JP01, server: 64.176.57.170, port: 42142, type: vmess, uuid: d9e11325-1f5a-4f76-b4bf-7caa058c175f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, tfo: false}
 proxy-groups:
